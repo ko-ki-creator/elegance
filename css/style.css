@@ -1,0 +1,238 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "YuMincho", "Hiragino Kaku Gothic Pro", sans-serif;
+    color: #444;
+}
+
+:root {
+    --white: #fff;
+    --dark-navy: #061743;
+    --navy: #132B6B;
+    --dark-red: #680E0E;
+    --red: #C51717;
+    --beige: #918C78;
+
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.inner {
+    margin-bottom: 100px;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
+
+/* セクションタイトル */
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+
+    h2 {
+        font-size: 45px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+    }
+
+    h3 {
+        font-size: 21px;
+        font-weight: 400;
+        letter-spacing: 0.03em;
+    }
+}
+
+
+/* ---------------------------------------------------
+PC
+--------------------------------------------------- */
+
+
+/* --------------------------------メインビジュアル */
+
+
+
+
+/* --------------------------------ナビゲーション */
+.nav {
+    background-color: var(--navy);
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+
+}
+
+.nav-item {
+    padding: 15px 0;
+
+    a {
+        color: var(--white);
+        font-size: 18px;
+        transition-duration: .2s;
+
+        &::after {
+            content: url(/images/nav-arrow.png);
+            margin-left: 5px;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.hiragino {
+    font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+}
+
+
+/* --------------------------------特徴 */
+.features-content {
+    position: relative;
+    margin-bottom: 50px;
+
+    img {
+        position: relative;
+        z-index: 10;
+    }
+
+    .features-text {
+        width: 40%;
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        z-index: 20;
+
+        h4 {
+            color: var(--dark-navy);
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+    }
+
+    h5 {
+        color: var(--dark-navy);
+        font-size: 45px;
+        font-weight: 400;
+        letter-spacing: 0.2em;
+        margin: 0;
+        position: absolute;
+        left: 3%;
+        bottom: 1%;
+        z-index: 20;
+    }
+}
+
+.features-content-column {
+    position: relative;
+    margin-bottom: 50px;
+
+    img {
+        position: relative;
+        z-index: 10;
+    }
+
+    .features-text {
+        width: 40%;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        z-index: 20;
+
+        h4 {
+            color: var(--dark-navy);
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+    }
+
+    h5 {
+        color: var(--dark-navy);
+        font-size: 45px;
+        font-weight: 400;
+        letter-spacing: 0.2em;
+        margin: 0;
+        position: absolute;
+        right: 3%;
+        bottom: 1%;
+        z-index: 20;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------
+SP
+--------------------------------------------------- */
+@media screen and (max-width: 767px) {
+    .inner {
+        margin-bottom: 100px;
+    }
+
+    .pc {
+        display: block;
+    }
+
+    .sp {
+        display: none;
+    }
+
+
+    /* --------------------------------ナビゲーション */
+    
+
+}
