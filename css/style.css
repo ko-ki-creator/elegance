@@ -513,6 +513,65 @@ PC
 }
 
 
+/* --------------------------------施術の流れ */
+.flow-content {
+    display: flex;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 80%;
+
+    img {
+        width: 50%;
+    }
+}
+
+.flow-group {
+    position: relative;
+
+    .flow-ribbon {
+        background-image: url(/images/flow-ribbon.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 62px;
+        color: var(--white);
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        position: absolute;
+        top: 20px;
+        left: -60px;
+        padding-bottom: 10px;
+
+        .step {
+            font-size: 30px;
+            line-height: 1em;
+            margin-left: 10%;
+
+            span {
+                font-size: 45px;
+                margin-left: 10px;
+                background: linear-gradient(#E6D78A 0%, #C5B149 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .ribbon-title {
+            font-size: 30px;
+        }
+    }
+
+    /* p {
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+    } */
+}
+
+
 
 
 
