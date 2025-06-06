@@ -598,57 +598,54 @@ PC
 .flow-content {
     display: flex;
     box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-    width: 100%;
+    width: calc(100% - 15px);
     margin-bottom: 50px;
-
-    img {
-        width: 50%;
-    }
-}
-
-.flow-group {
     position: relative;
 
-    .flow-ribbon {
-        background-image: url(/images/flow-ribbon.png);
-        background-size: 60% 100%;
-        background-repeat: no-repeat;
-        width: 100%;
-        color: var(--white);
-        display: flex;
-        gap: 30px;
-        align-items: center;
-        position: absolute;
-        top: 20px;
-        left: -23px;
-        padding-bottom: 10px;
-
-        .step {
-            font-size: 30px;
-            line-height: 1em;
-            margin-left: 10%;
-
-            span {
-                font-size: 45px;
-                margin-left: 10px;
-                background: linear-gradient(#E6D78A 0%, #C5B149 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-        }
-
-        .ribbon-title {
-            font-size: 30px;
-        }
+    > img {
+        width: 50%;
     }
 
     p {
         width: 100%;
-        margin-top: 100px;
+        margin-top: 120px;
         padding: 0 30px;
     }
 }
 
+.flow-ribbon {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    width: 60%;
+
+    img {
+        width: 100%;
+        min-height: 72px;
+    }
+}
+
+.ribbon-number {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    top: 15px;
+    left: 90px;
+
+    h4 {
+        color: var(--white);
+        font-size: 30px;
+        line-height: 1em;
+
+        span {
+            background: linear-gradient(#E6D78A 0%, #C5B149 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 45px;
+            margin-left: 10px;
+        }
+    }
+}
 
 
 /* --------------------------------CTA */
@@ -1257,48 +1254,46 @@ SP
         }
     }
 
-
-    /* --------------------------------施術の流れ */
+/* --------------------------------施術の流れ */
     .flow-content {
         flex-direction: column;
+        width: 100%;
         margin-bottom: 30px;
+
+        > img {
+            width: 100%;
+            min-height: 192px;
+            object-fit: cover;
+        }
+
+        p {
+            width: 100%;
+            margin-top: 15px;
+            padding: 0 15px 30px;
+        }
+    }
+
+    .flow-ribbon {
+        top: 40%;
+        right: -10px;
+        width: 100%;
 
         img {
             width: 100%;
         }
     }
 
-    .flow-group {
-        position: relative;
+    .ribbon-number {
+        left: 15%;
 
-        .flow-ribbon {
-            background-image: url(/images/flow-ribbon-sp.png);
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            right: -50px;
+        h4 {
+            font-size: 21px;
 
-            .step {
-                font-size: 21px;
-
-                span {
-                    font-size: 30px;
-                }
+            span {
+                font-size: 30px;
             }
-
-            .ribbon-title {
-                font-size: 21px;
-            }
-        }
-
-        p {
-            margin-top: 0;
-            padding: 20px 30px;
         }
     }
-
 
     /* --------------------------------CTA */
     .cta-one {
@@ -1467,7 +1462,7 @@ SP
                 background-color: var(--white);
                 transform: scale(0, 1);
                 transform-origin: left top;
-                transition: transform 0.4s;
+                transition: transform 0.5s;
             }
 
             &:hover::after {
