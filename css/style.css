@@ -78,6 +78,86 @@ PC
 
 
 /* --------------------------------メインビジュアル */
+.header {
+    background-image: url(/images/mv-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 612px;
+}
+
+.catch-copy {
+    color: var(--navy);
+    margin-bottom: 20px;
+    padding-top: 70px;
+
+    h1 {
+        font-size: 75px;
+        font-weight: 600;
+
+        span {
+            font-size: 69px;
+            margin-right: -25px;
+        }
+    }
+
+    h2 {
+        font-size: 45px;
+
+        span {
+            font-size: 39px;
+            margin-right: -15px;
+        }
+    }
+}
+
+.sub-copy {
+    font-size: 21px;
+    font-family: "Yumincho", sans-serif;
+    margin-bottom: 100px;
+}
+
+.mv-btn {
+    text-align: left;
+
+    a {
+        color: var(--white);
+        font-size: 21px;
+        background: linear-gradient(#918C78 0%, #ADA68D 50%, #918C78 100%);
+        padding: 15px 30px;
+        position: relative;
+        z-index: 10;
+        transition-duration: .3s;
+
+        &::before {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            content: '';
+            -webkit-transition: all .3s;
+            transition: all .3s;
+            border: 1px solid var(--white);
+        }
+
+        &::after {
+            content: url(/images/mv-btn-arrow.png);
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        &:hover {
+            color: var(--white);
+            font-size: 24px;
+            background-color: var(--beige);
+        }
+    }
+}
+
+
+
 
 
 
@@ -207,6 +287,7 @@ PC
     background-image: url(/images/trouble-back.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: 588px;
 }
@@ -517,7 +598,8 @@ PC
 .flow-content {
     display: flex;
     box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-    width: 80%;
+    width: 100%;
+    margin-bottom: 50px;
 
     img {
         width: 50%;
@@ -529,17 +611,16 @@ PC
 
     .flow-ribbon {
         background-image: url(/images/flow-ribbon.png);
-        background-size: cover;
+        background-size: 60% 100%;
         background-repeat: no-repeat;
         width: 100%;
-        height: 62px;
         color: var(--white);
         display: flex;
         gap: 30px;
         align-items: center;
         position: absolute;
         top: 20px;
-        left: -60px;
+        left: -23px;
         padding-bottom: 10px;
 
         .step {
@@ -561,20 +642,323 @@ PC
         }
     }
 
-    /* p {
-        position: absolute;
-        top: 50%;
-        left: 30px;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-    } */
+    p {
+        width: 100%;
+        margin-top: 100px;
+        padding: 0 30px;
+    }
 }
 
 
 
+/* --------------------------------CTA */
+.cta-one {
+    background-image: url(/images/cta-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cta-container {
+    display: flex;
+}
+
+.cta-space {
+    width: 55%;
+}
+
+.cta-content {
+    padding: 50px 0;
+}
+
+.cta-title {
+    margin-bottom: 50px;
+
+    h2 {
+        font-size: 30px;
+        line-height: 1.5em;
+        letter-spacing: 0.03em;
+        background: linear-gradient(#E6D78A 43%, #AA9F66 50%, #E6D78A 57%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.cta-text {
+    color: var(--white);
+
+    p {
+        margin-bottom: 20px;
+        font-weight: 300;
+    }
+}
+
+.cta-group {
+    display: flex;
+    justify-content: center;
+
+    > p {
+        color: var(--white);
+        background-color: var(--beige);
+        border: 2px solid var(--white);
+        border-radius: 60px;
+        font-size: 12px;
+        font-family: 'Yumincho', sans-serif;
+        width: 120px;
+        height: 120px;
+        text-align: center;
+        place-content: center;
+        position: relative;
+        z-index: 20;
+
+        span {
+            font-size: 30px;
+            line-height: 1em;
+        }
+    }
+
+    .cta-btn {
+        text-align: center;
+        margin-left: -15px;
+
+        p {
+            color: var(--white);
+            font-family: 'Yumincho', sans-serif;
+            font-size: 21px;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: var(--beige);
+            font-size: 21px;
+            background-color: var(--white);
+            padding: 15px 30px;
+            position: relative;
+            width: 367px;
+            height: 52px;
+            z-index: 10;
+            transition-duration: .3s;
+
+            &::before {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                width: calc(100% - 10px);
+                height: calc(100% - 10px);
+                content: '';
+                -webkit-transition: all .3s;
+                transition: all .3s;
+                border: 1px solid var(--beige);
+            }
+
+            &::after {
+                content: url(/images/mv-btn-arrow-beige.png);
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 5px;
+            }
+
+            &:hover {
+                color: var(--white);
+                font-size: 18px;
+                background-color: var(--beige);
+            }
+        }
+    }
+}
 
 
+
+/* --------------------------------利用者のレビュー */
+.review {
+    background-image: url(/images/review-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.review-group {
+    display: flex;
+    gap: 50px;
+}
+
+.review-content {
+    width: 50%;
+    height: fit-content;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 15px;
+    background-color: var(--white);
+
+    img {
+        width: 150px;
+        margin: 0 auto 15px;
+    }
+
+    h4 {
+        color: var(--beige);
+        font-size: 30px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+
+        &::before, &::after {
+            content: '';
+            width: 33%;
+            height: 1px;
+            background-color: var(--beige);
+        }
+    }
+
+    p {
+        color: var(--beige);
+        font-family: 'katyoubb', sans-serif;
+    }
+}
+
+.review-right {
+    margin-top: 100px;
+}
+
+.review-top-space {
+    margin-top: -50px;
+}
+
+
+
+/* --------------------------------FAQ */
+.faq {
+    background-image: url(/images/faq-back.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.faq-content {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px 106px;
+    border: 1px solid #918C78;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px rgba(127, 119, 88, 1);
+}
+
+.question,
+.answer {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+    .q,
+    .q-text,
+    .a {
+        font-size: 24px;
+        font-family: 'Yumincho', sans-serif;
+    }
+
+    .a {
+        width: 20px;
+    }
+}
+
+.question {
+    margin-bottom: 15px;
+}
+
+
+/* --------------------------------CTA */
+.cta-two {
+    background-image: url(/images/cta-back2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bottom-space {
+    margin-bottom: 0;
+}
+
+
+
+/* --------------------------------フッター */
+.footer {
+    background-color: var(--dark-navy);
+
+    h2,
+    p,
+    a {
+        color: var(--white);
+        font-family: 'Yumincho', sans-serif;
+    }
+}
+
+.footer-container {
+    display: flex;
+    margin-bottom: 50px;
+    padding: 50px 0;
+}
+
+.footer-about {
+    width: 45%;
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        margin-bottom: 5px;
+    }
+}
+
+.footer-nav-above,
+.footer-nav-under {
+
+    a {
+        font-size: 21px;
+        margin-right: 50px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: var(--white);
+            transform: scale(0, 1);
+            transform-origin: left top;
+            transition: transform 0.4s;
+        }
+
+        &:hover::after {
+            transform: scale(1, 1);
+        }
+    }
+}
+
+.footer-nav-above {
+    margin-bottom: 30px;
+}
+
+.footer-nav-under {
+    margin-bottom: 75px;
+}
+
+.footer-sns {
+    display: flex;
+    gap: 20px;
+}
+
+.copyright {
+    text-align: center;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
 
 
 
@@ -872,6 +1256,237 @@ SP
             font-size: 21px;
         }
     }
+
+
+    /* --------------------------------施術の流れ */
+    .flow-content {
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .flow-group {
+        position: relative;
+
+        .flow-ribbon {
+            background-image: url(/images/flow-ribbon-sp.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: -50px;
+
+            .step {
+                font-size: 21px;
+
+                span {
+                    font-size: 30px;
+                }
+            }
+
+            .ribbon-title {
+                font-size: 21px;
+            }
+        }
+
+        p {
+            margin-top: 0;
+            padding: 20px 30px;
+        }
+    }
+
+
+    /* --------------------------------CTA */
+    .cta-one {
+        background-image: url(/images/cta-back-sp.png);
+    }
+
+    .cta-container {
+        flex-direction: column;
+    }
+
+    .cta-space {
+        height: 250px;
+    }
+
+    .cta-content {
+        padding: 20px 0;
+    }
+
+    .cta-title {
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 21px;
+        }
+    }
+
+    .cta-text {
+
+        p {
+            margin-bottom: 15px;
+        }
+    }
+
+    .cta-group {
+        justify-content: center;
+        gap: 15px;
+
+        > p {
+            border: 1px solid var(--white);
+            border-radius: 50px;
+            width: 95px;
+            height: 95px;
+            letter-spacing: -0.05em;
+        }
+
+        .cta-btn {
+            text-align: center;
+            margin-left: -30px;
+
+            p {
+                font-size: 18px;
+                letter-spacing: -0.05em;
+            }
+
+            a {
+                font-size: 16px;
+                padding: 20px;
+                position: relative;
+                width: 250px;
+
+                &::after {
+                    display: none;
+                }
+
+                &:hover {
+                    color: var(--white);
+                    font-size: 16px;
+                    background-color: var(--beige);
+                }
+            }
+        }
+    }
+
+
+
+    /* --------------------------------利用者のレビュー */
+    .review-group {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .review-content {
+        width: 100%;
+
+        h4 {
+            font-size: 21px;
+
+            &::before, &::after {
+                width: 30%;
+            }
+        }
+    }
+
+    .review-right {
+        margin-top: 0;
+    }
+
+    .review-top-space {
+        margin-top: 30px;
+    }
+
+
+
+    /* --------------------------------FAQ */
+    .faq-content {
+        padding: 20px 15px;
+    }
+
+    .question,
+    .answer {
+
+        .q,
+        .q-text,
+        .a {
+            font-size: 18px;
+            font-family: 'Yumincho', sans-serif;
+        }
+    }
+
+
+    /* --------------------------------CTA */
+    .cta-two {
+        background-image: url(/images/cta-back2-sp.png);
+    }
+
+    .bottom-space {
+        margin-bottom: 0;
+    }
+
+
+
+    /* --------------------------------フッター */
+    .footer-container {
+        flex-direction: column;
+        padding: 50px 15px;
+    }
+
+    .footer-about {
+        width: 100%;
+        margin-bottom: 50px;
+
+        h2 {
+            font-size: 21px;
+        }
+    }
+
+    .footer-nav {
+        display: flex;
+        gap: 50px;
+    }
+
+    .footer-nav-above,
+    .footer-nav-under {
+        margin-bottom: 50px;
+
+        a {
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 0;
+            margin-bottom: 10px;
+
+            &::after {
+                width: 100%;
+                bottom: -2px;
+                background-color: var(--white);
+                transform: scale(0, 1);
+                transform-origin: left top;
+                transition: transform 0.4s;
+            }
+
+            &:hover::after {
+                transform: scale(1, 1);
+            }
+        }
+    }
+
+    .footer-sns {
+        justify-content: center;
+    }
+
+    .copyright {
+        text-align: center;
+        font-weight: lighter;
+        padding-bottom: 10px;
+    }
+
+
 
 
 
