@@ -6,6 +6,7 @@
     <title>PF | Elegance</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -19,7 +20,7 @@
                     </h1>
                     <h2>
                         今<span>なら</span>
-                        特別キャンペーン価格<span>で</span>
+                        特別キャンペーン価格<span>で</span><br class="sp">
                         体験<span>できます。</span>
                     </h2>
                 </div>
@@ -30,23 +31,44 @@
                     <a href="#">今すぐ20%オフで予約する</a>
                 </div>
             </div>
+            <button class="hamburger" id="js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
     <main>
         <!-- ナビゲーション -->
         <section class="navigation">
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#features">特徴</a></li>
-                    <li class="nav-item"><a href="#reason">選ばれる理由</a></li>
-                    <li class="nav-item"><a href="#commitment">こだわり</a></li>
-                    <li class="nav-item"><a href="#menu">メニュー</a></li>
-                    <li class="nav-item"><a href="#flow">施術の流れ</a></li>
-                    <li class="nav-item"><a href="#review">利用者のレビュー</a></li>
-                    <li class="nav-item"><a href="#faq">よくある質問</a></li>
-                </ul>
-            </nav>
+            <div class="navigation-container" id="js-nav">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#features">特徴</a></li>
+                        <li class="nav-item"><a href="#reason">選ばれる理由</a></li>
+                        <li class="nav-item"><a href="#commitment">こだわり</a></li>
+                        <li class="nav-item"><a href="#menu">メニュー</a></li>
+                        <li class="nav-item"><a href="#flow">施術の流れ</a></li>
+                        <li class="nav-item"><a href="#review">利用者のレビュー</a></li>
+                        <li class="nav-item"><a href="#faq">よくある質問</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-btn sp">
+                    <a href="#">予約する</a>
+                </div>
+                <div class="nav-sns">
+                    <a href="https://www.instagram.com/">
+                        <img src="images/instagram-icon.png" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/?locale=ja_JP">
+                        <img src="images/facebook-icon.png" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/?locale=ja_JP">
+                        <img src="images/x-icon.png" alt="">
+                    </a>
+                </div>
+            </div>
         </section>
 
         <!-- 特徴 -->

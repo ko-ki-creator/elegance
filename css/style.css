@@ -127,7 +127,7 @@ PC
         padding: 15px 30px;
         position: relative;
         z-index: 10;
-        transition-duration: .3s;
+        transition-duration: .4s;
 
         &::before {
             position: absolute;
@@ -158,12 +158,69 @@ PC
 
 
 
+/* ハンバーガーメニュー */
+.hamburger {
+    width: 50px;
+    height: 50px;
+    background-color: var(--dark-navy);
+    border-radius: 5px 0 0 5px;
+    position: fixed;
+    top: 20px;
+    right: 0;
+    z-index: 99;
+    display: none;
+
+    span {
+        width: 80%;
+        height: 2px;
+        border-radius: 1px;
+        margin: 10px auto;
+        background-color: var(--white);
+        position: relative;
+        transition: ease .4s;
+        display: block;
+    }
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(3) {
+    margin: 10px auto;
+}
+
+/* ハンバーガーメニュークリック後のスタイル */
+.hamburger.active {
+    background-color: var(--white);
+}
+
+.hamburger.active span:nth-child(1) {
+    top: 12px;
+    transform: rotate(45deg);
+    background-color: var(--dark-navy);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    top: -12px;
+    transform: rotate(-45deg);
+    background-color: var(--dark-navy);
+}
+
+/* ハンバーガーメニュークリック後のスタイル */
+.header-nav.active {
+    transform: translate(0);
+}
 
 
 
 
 /* --------------------------------ナビゲーション */
-.nav {
+.navigation-container {
     background-color: var(--navy);
     width: 100%;
     margin-bottom: 50px;
@@ -174,7 +231,7 @@ PC
     justify-content: space-between;
     width: 100%;
     max-width: 1080px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
 
 }
 
@@ -199,6 +256,50 @@ PC
 
 .hiragino {
     font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+}
+
+.nav-btn {
+    text-align: center;
+    margin-bottom: 30px;
+
+    a {
+        color: var(--beige);
+        font-size: 16px;
+        background-color: var(--white);
+        padding: 15px 110px;
+        position: relative;
+        z-index: 10;
+        transition-duration: .4s;
+
+        &::before {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: calc(100% - 6px);
+            height: calc(100% - 6px);
+            content: '';
+            -webkit-transition: all .3s;
+            transition: all .3s;
+            border: 1px solid var(--beige);
+        }
+
+        &::after {
+            content: url(/images/mv-btn-arrow-beige.png);
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        &:hover {
+            color: var(--white);
+            font-size: 24px;
+            background-color: var(--beige);
+        }
+    }
+}
+
+.nav-sns {
+    display: none;
 }
 
 
@@ -1020,8 +1121,124 @@ SP
     }
 
 
+    /* --------------------------------メインビジュアル */
+    .header {
+        background-image: url(/images/mv-back.png);
+        background-position: right;
+        margin-bottom: 50px;
+    }
+
+    .catch-copy {
+        padding: 180px 15px 0;
+        letter-spacing: -0.05em;
+
+        h1 {
+            font-size: 30px;
+
+            span {
+                font-size: 27px;
+                margin-right: -10px;
+            }
+        }
+
+        h2 {
+            font-size: 21px;
+
+            span {
+                font-size: 18px;
+                margin-right: -5px;
+            }
+        }
+    }
+
+    .sub-copy {
+        font-size: 16px;
+        margin-bottom: 180px;
+        padding: 0 15px;
+    }
+
+    .mv-btn {
+        text-align: center;
+
+        a {
+            color: var(--white);
+            font-size: 21px;
+            background: linear-gradient(#918C78 0%, #ADA68D 50%, #918C78 100%);
+            padding: 15px 30px;
+            position: relative;
+            z-index: 10;
+
+            &::before {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                width: calc(100% - 10px);
+                height: calc(100% - 10px);
+                content: '';
+                -webkit-transition: all .3s;
+                transition: all .3s;
+                border: 1px solid var(--white);
+
+                &:hover {
+                    border: 1px solid var(--beige);
+                }
+            }
+
+            &::after {
+                content: url(/images/mv-btn-arrow.png);
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 5px;
+            }
+
+            &:hover {
+                color: var(--beige);
+                font-size: 21px;
+                background-color: var(--white);
+                background: linear-gradient(#FFF 0%, #FFF 50%, #FFF 100%);
+            }
+        }
+    }
+
+
+    /* --------------------------------ハンバーガーメニュー */
+    .hamburger {
+        display: block;
+    }
+
+
+
     /* --------------------------------ナビゲーション */
-    
+    .navigation-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateX(100%);
+        transition: ease .5s;
+        z-index: 98;
+        overflow-y: scroll;
+    }
+
+    .navigation-container.active {
+        transform: translateX(0);
+    }
+
+    .nav-list {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        padding: 70px 15px 0;
+    }
+
+    .nav-sns {
+        display: block;
+        display: flex;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
 
 
 
@@ -1034,6 +1251,7 @@ SP
 
 
     /* --------------------------------特徴 */
+
     .features-content {
         margin-bottom: 0;
 
@@ -1382,7 +1600,7 @@ SP
             font-size: 21px;
 
             &::before, &::after {
-                width: 30%;
+                width: 27%;
             }
         }
     }
