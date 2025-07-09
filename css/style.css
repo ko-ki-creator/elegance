@@ -79,7 +79,7 @@ PC
 
 /* --------------------------------メインビジュアル */
 .header {
-    background-image: url(/images/mv-back.png);
+    background-image: url(/images/mainvisual/mv-back.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -142,7 +142,7 @@ PC
         }
 
         &::after {
-            content: url(/images/mv-btn-arrow.png);
+            content: url(/images/mainvisual/mv-btn-arrow.png);
             display: inline-block;
             vertical-align: middle;
             margin-left: 5px;
@@ -244,7 +244,7 @@ PC
         transition-duration: .2s;
 
         &::after {
-            content: url(/images/nav-arrow.png);
+            content: url(/images/mainvisual/nav-arrow.png);
             margin-left: 5px;
         }
 
@@ -284,7 +284,7 @@ PC
         }
 
         &::after {
-            content: url(/images/mv-btn-arrow-beige.png);
+            content: url(/images/mainvisual/mv-btn-arrow-beige.png);
             display: inline-block;
             vertical-align: middle;
             margin-left: 5px;
@@ -340,6 +340,7 @@ PC
         left: 3%;
         bottom: 1%;
         z-index: 20;
+        opacity: 0.5;
     }
 }
 
@@ -379,13 +380,14 @@ PC
         right: 3%;
         bottom: 1%;
         z-index: 20;
+        opacity: 0.5;
     }
 }
 
 
 /* --------------------------------お悩み */
 .trouble {
-    background-image: url(/images/trouble-back.png);
+    background-image: url(/images/trouble/trouble-back.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -483,7 +485,7 @@ PC
 
 /* --------------------------------選ばれる理由 */
 .reason {
-    background-image: url(/images/reason-back.png);
+    background-image: url(/images/reason/reason-back.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -557,7 +559,7 @@ PC
 .commitment-group {
 
     h4 {
-        background-image: url(/images/commitment-ribbon.png);
+        background-image: url(/images/commitment/commitment-ribbon.png);
         background-size: cover;
         background-repeat: no-repeat;
         width: 60%;
@@ -637,7 +639,7 @@ PC
     }
 
     &::after {
-        content: url(/images/price-arrow.png);
+        content: url(/images/menu/price-arrow.png);
         margin-left: 15px;
     }
 }
@@ -751,7 +753,7 @@ PC
 
 /* --------------------------------CTA */
 .cta-one {
-    background-image: url(/images/cta-back.png);
+    background-image: url(/images/cta/cta-back.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -850,7 +852,7 @@ PC
             }
 
             &::after {
-                content: url(/images/mv-btn-arrow-beige.png);
+                content: url(/images/mainvisual/mv-btn-arrow-beige.png);
                 display: inline-block;
                 vertical-align: middle;
                 margin-left: 5px;
@@ -869,7 +871,7 @@ PC
 
 /* --------------------------------利用者のレビュー */
 .review {
-    background-image: url(/images/review-back.png);
+    background-image: url(/images/review/review-back.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -928,7 +930,7 @@ PC
 
 /* --------------------------------FAQ */
 .faq {
-    background-image: url(/images/faq-back.png);
+    background-image: url(/images/faq/faq-back.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -969,7 +971,7 @@ PC
 
 /* --------------------------------CTA */
 .cta-two {
-    background-image: url(/images/cta-back2.png);
+    background-image: url(/images/cta/cta-back2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1123,7 +1125,7 @@ SP
 
     /* --------------------------------メインビジュアル */
     .header {
-        background-image: url(/images/mv-back.png);
+        background-image: url(/images/mainvisual/mv-back.png);
         background-position: right;
         margin-bottom: 50px;
     }
@@ -1185,7 +1187,7 @@ SP
             }
 
             &::after {
-                content: url(/images/mv-btn-arrow.png);
+                content: url(/images/mainvisual/mv-btn-arrow.png);
                 display: inline-block;
                 vertical-align: middle;
                 margin-left: 5px;
@@ -1238,12 +1240,6 @@ SP
         gap: 20px;
         padding: 0 15px;
     }
-
-
-
-
-
-
 
 
 
@@ -1515,7 +1511,7 @@ SP
 
     /* --------------------------------CTA */
     .cta-one {
-        background-image: url(/images/cta-back-sp.png);
+        background-image: url(/images/cta/cta-back-sp.png);
     }
 
     .cta-container {
@@ -1634,7 +1630,7 @@ SP
 
     /* --------------------------------CTA */
     .cta-two {
-        background-image: url(/images/cta-back2-sp.png);
+        background-image: url(/images/cta/cta-back2-sp.png);
     }
 
     .bottom-space {
