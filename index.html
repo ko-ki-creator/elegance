@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PF | Elegance</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="wrapper">
+                <div class="catch-copy">
+                    <h1>
+                        Elegance<span>で</span>
+                        極上<span>の</span>
+                        癒<span>しを。</span>
+                    </h1>
+                    <h2>
+                        今<span>なら</span>
+                        特別キャンペーン価格<span>で</span><br class="sp">
+                        体験<span>できます。</span>
+                    </h2>
+                </div>
+                <p class="sub-copy">
+                    美しさと心の安らぎを両立する、あなた専用の贅沢な時間をご提供します。
+                </p>
+                <div class="mv-btn">
+                    <a href="#">今すぐ20%オフで予約する</a>
+                </div>
+            </div>
+            <button class="hamburger" id="js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ナビゲーション -->
+        <section class="navigation">
+            <div class="navigation-container" id="js-nav">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#features">特徴</a></li>
+                        <li class="nav-item"><a href="#reason">選ばれる理由</a></li>
+                        <li class="nav-item"><a href="#commitment">こだわり</a></li>
+                        <li class="nav-item"><a href="#menu">メニュー</a></li>
+                        <li class="nav-item"><a href="#flow">施術の流れ</a></li>
+                        <li class="nav-item"><a href="#review">利用者のレビュー</a></li>
+                        <li class="nav-item"><a href="#faq">よくある質問</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-btn sp">
+                    <a href="#">予約する</a>
+                </div>
+                <div class="nav-sns">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                        <img src="images/sns-icon/instagram-icon.png" alt="インスタグラム">
+                    </a>
+                    <a href="https://www.facebook.com/?locale=ja_JP" target="_blank" rel="noreferrer">
+                        <img src="images/sns-icon/facebook-icon.png" alt="フェイスブック">
+                    </a>
+                    <a href="https://x.com/" target="_blank" rel="noreferrer">
+                        <img src="images/sns-icon/x-icon.png" alt="エックス">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 特徴 -->
+        <section class="features" id="features">
+            <div class="wrapper">
+                <div class="inner multiple-list js-scroll-trigger">
+                    <div class="heading multiple-item u-fade-type-up">
+                        <h2>FEATURES</h2>
+                        <h3>Eleganceの特徴</h3>
+                    </div>
+                    <div class="features-container multiple-item u-fade-type-up">
+                        <div class="features-content">
+                            <img class="pc" src="images/feature/features1.png" alt="高級感">
+                            <img class="sp" src="images/feature/features1-sp.png" alt="高級感">
+                            <div class="features-text">
+                                <h4>高級感</h4>
+                                <p class="hiragino">
+                                    エレガントで洗練されたインテリアに囲まれ、贅沢な空間で過ごすひととき。あなたのためだけのプライベートルームで、他のお客様の目を気にせず、リラックスできます。
+                                </p>
+                            </div>
+                            <h5>Luxury</h5>
+                        </div>
+                        <div class="features-content-column">
+                            <img class="pc" src="images/feature/features2.png" alt="専門性">
+                            <img class="sp" src="images/feature/features2-sp.png" alt="専門性">
+                            <div class="features-text">
+                                <h4>専門性</h4>
+                                <p class="hiragino">
+                                    経験豊富なセラピストによる確かな技術。全てのお客様に、オーダーメイドのケアプランを提供し、個別のニーズに応じた施術を行います。
+                                </p>
+                            </div>
+                            <h5>Expertise</h5>
+                        </div>
+                        <div class="features-content">
+                            <img class="pc" src="images/feature/features3.png" alt="パーソナライズドケア">
+                            <img class="sp" src="images/feature/features3-sp.png" alt="パーソナライズドケア">
+                            <div class="features-text">
+                                <h4>パーソナライズドケア</h4>
+                                <p class="hiragino">
+                                    カウンセリングを通じて、あなたの肌や体の状態を詳細に把握し、最適な施術を提案。心身のバランスを整えるリラクゼーションとビューティーケアを同時に提供します。
+                                </p>
+                            </div>
+                            <h5>Personalized Care</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- お悩み -->
+        <section class="trouble" id="trouble">
+            <div class="wrapper">
+                <div class="inner multiple-list js-scroll-trigger">
+                    <div class="heading multiple-item u-fade-type-up">
+                        <h2>TROUBLE</h2>
+                        <h3>こんなお悩みありませんか？</h3>
+                    </div>
+                    <div class="trouble-container multiple-item u-fade-type-up">
+                        <img src="images/trouble/trouble-woman.png" alt="こんなお悩みありませんか？">
+                        <div class="trouble-list">
+                            <div class="trouble-item">
+                                <div class="trouble-title">
+                                    <img src="images/trouble/check-icon.png" alt="ストレスによる疲労感">
+                                    <h4>ストレスによる疲労感</h4>
+                                </div>
+                                <p>
+                                    毎日のストレスや疲れが蓄積し、心も体も重く感じていませんか？
+                                </p>
+                            </div>
+                            <div class="trouble-item">
+                                <div class="trouble-title">
+                                    <img src="images/trouble/check-icon.png" alt="肌トラブル">
+                                    <h4>肌トラブル</h4>
+                                </div>
+                                <p>
+                                    ハリやツヤが失われ、肌の調子が悪いと感じている方に。<br>
+                                    乾燥や小じわ、くすみなどのお悩みも解決。
+                                </p>
+                            </div>
+                            <div class="trouble-item">
+                                <div class="trouble-title">
+                                    <img src="images/trouble/check-icon.png" alt="自分磨き">
+                                    <h4>自分磨き</h4>
+                                </div>
+                                <p>
+                                    自分自身に特別なご褒美をあげたい、少し贅沢な時間を過ごしたいと感じていませんか？
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 解決 -->
+        <section class="solution" id="solution">
+            <div class="wrapper">
+                <div class="inner multiple-list js-scroll-trigger">
+                    <div class="solution-flex multiple-item u-fade-type-up">
+                        <div class="solution-left">
+                            <img class="solution-1" src="images/solution/solution1.png" alt="Eleganceでその悩みを解決">
+                            <img class="solution-2" src="images/solution/solution2.png" alt="Eleganceでその悩みを解決">
+                        </div>
+                        <div class="solution-right">
+                            <div class="heading">
+                                <h2>SOLUTION</h2>
+                                <h3>Eleganceでその悩みを解決</h3>
+                            </div>
+                            <div class="solution-container">
+                                <div class="solution-content">
+                                    <h4>疲労回復</h4>
+                                    <p>
+                                        リラクゼーションマッサージで、全身の筋肉をほぐし、深いリラックス状態をもたらします。ストレスから解放され、心身ともにリフレッシュ。
+                                    </p>
+                                </div>
+                                <div class="solution-content">
+                                    <h4>美肌ケア</h4>
+                                    <p>
+                                        最新の美容技術を駆使したフェイシャルトリートメントで、肌の悩みを解消。ハリとツヤを取り戻し、若々しい肌を実感できます。
+                                    </p>
+                                </div>
+                                <div class="solution-content">
+                                    <h4>贅沢な時間</h4>
+                                    <p>
+                                        Eleganceならではの上質なサービスと贅沢な空間で、あなただけの特別な時間をお過ごしください。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 選ばれる理由 -->
+        <section class="reason" id="reason">
+            <div class="wrapper">
+                <div class="inner multiple-list js-scroll-trigger">
+                    <div class="heading multiple-item u-fade-type-up">
+                        <h2>REASON</h2>
+                        <h3>Eleganceが選ばれる理由</h3>
+                    </div>
+                    <div class="reason-container multiple-item u-fade-type-up">
+                        <div class="reason-content">
+                            <div class="number">
+                                <p>1</p>
+                            </div>
+                            <div class="reason-group">
+                                <img src="images/reason/reason1.png" alt="豊富な経験">
+                                <h4>豊富な経験</h4>
+                                <p>
+                                    10年以上の経験を持つセラピストが、確かな技術でお客様の満足を追求します。リピーター率90%の実績が信頼の証です。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="reason-content">
+                            <div class="number">
+                                <p>2</p>
+                            </div>
+                            <div class="reason-group">
+                                <img src="images/reason/reason2.png" alt="完全個室">
+                                <h4>完全個室</h4>
+                                <p>
+                                    プライベート空間での施術により、他のお客様と顔を合わせることなく、リラックスした時間をお楽しみいただけます。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="reason-content">
+                            <div class="number">
+                                <p>3</p>
+                            </div>
+                            <div class="reason-group">
+                                <img src="images/reason/reason3.png" alt="最新設備">
+                                <h4>最新設備</h4>
+                                <p>
+                                    Eleganceならではの上質なサービスと贅沢な空間で、あなただけの特別な時間をお過ごしください。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- こだわり -->
+        <section class="commitment" id="commitment">
+            <div class="wrapper">
+                <div class="inner multiple-list js-scroll-trigger">
+                    <div class="heading multiple-item u-fade-type-up">
+                        <h2>COMMITMENT</h2>
+                        <h3>Eleganceのこだわり</h3>
+                    </div>
+                    <div class="commitment-container multiple-item u-fade-type-up">
+                        <div class="commitment-content">
+                            <img src="images/commitment/commitment1.png" alt="品質">
+                            <div class="commitment-group">
+                                <h4>品質</h4>
+                                <p>
+                                    Eleganceでは、全ての施術において最高品質のオイルを使用。お肌に優しく、効果が実感できる製品のみを厳選しています。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="commitment-content">
+                            <img src="images/commitment/commitment2.png" alt="衛生管理">
+                            <div class="commitment-group">
+                                <h4>衛生管理</h4>
+                                <p>
+                                    衛生管理を徹底し、施術ごとに機器やリネンを清潔に保つことで、安心してご利用いただけます。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="commitment-content">
+                            <img src="images/commitment/commitment3.png" alt="個別対応">
+                            <div class="commitment-group">
+                                <h4>個別対応</h4>
+                                <p>
+                                    お客様の状態に合わせたパーソナライズドケアを提供。施術前のカウンセリングで、最適な施術プランをご提案します。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- メニュー -->
+        <section class="menu" id="menu">
+            <div class="wrapper">
+                <div class="inner multiple-list js-scroll-trigger">
+                    <div class="heading multiple-item u-fade-type-up">
+                        <h2>MENU</h2>
+                        <h3>メニュー</h3>
+                    </div>
+                    <div class="menu-container multiple-item u-fade-type-up">
+                        <div class="menu-content">
+                            <img src="images/menu/menu1.png" alt="フェイシャルケア">
+                            <div class="menu-group">
+                                <h4>フェイシャルケア</h4>
+                                <p>ハリとツヤを取り戻す、アンチエイジングトリートメント。</p>
+                                <div class="menu-price">
+                                    <div class="regular">
+                                        <p class="regular-text">通常価格</p>
+                                        <p class="regular-price-text"><span class="through">¥ 12,000<span class="tax">(税込)</span></span></p>
+                                    </div>
+                                    <div class="campaign">
+                                        <p class="campaign-text">キャンペーン価格</p>
+                                        <p class="campaign-price-text">¥ 9,600<span>(税込)</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-content">
+                            <img src="images/menu/menu2.png" alt="ボディケア">
+                            <div class="menu-group">
+                                <h4>ボディケア</h4>
+                                <p>全身の筋肉をほぐし、疲労を回復させるディープティシュマッサージ。</p>
+                                <div class="menu-price">
+                                    <div class="regular">
+                                        <p class="regular-text">通常価格</p>
+                                        <p class="regular-price-text"><span class="through">¥ 15,000<span class="tax">(税込)</span></span></p>
+                                    </div>
+                                    <div class="campaign">
+                                        <p class="campaign-text">キャンペーン価格</p>
+                                        <p class="campaign-price-text">¥ 12,000<span>(税込)</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-content">
+                            <img src="images/menu/menu3.png" alt="トータルケア">
+                            <div class="menu-group">
+                                <h4>トータルケア</h4>
+                                <p>フェイシャルとボディの両方を贅沢にケアするプレミアムコース。</p>
+                                <div class="menu-price">
+                                    <div class="regular">
+                                        <p class="regular-text">通常価格</p>
+                                        <p class="regular-price-text"><span class="through">¥ 25,000<span class="tax">(税込)</span></span></p>
+                                    </div>
+                                    <div class="campaign">
+                                        <p class="campaign-text">キャンペーン価格</p>
+                                        <p class="campaign-price-text">¥ 20,000<span>(税込)</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-container-option">
+                            <div class="menu-content-option">
+                                <img src="images/menu/menu4.png" alt="ヘッドマッサージ">
+                                <div class="menu-group-option">
+                                    <p class="option">オプション</p>
+                                    <h4>ヘッドマッサージ</h4>
+                                    <p class="option-price">¥ 3,000<span class="tax">(税込)</span></p>
+                                </div>
+                            </div>
+                            <div class="menu-content-option">
+                                <img src="images/menu/menu5.png" alt="アロマテラピー">
+                                <div class="menu-group-option">
+                                    <p class="option">オプション</p>
+                                    <h4>アロマテラピー</h4>
+                                    <p class="option-price">¥ 4,000<span>(税込)</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 施術の流れ -->
+        <section class="flow" id="flow">
+            <div class="wrapper">
+                <div class="inner multiple-list js-scroll-trigger">
+                    <div class="heading multiple-item u-fade-type-up">
+                        <h2>FLOW</h2>
+                        <h3>施術の流れ</h3>
+                    </div>
+                    <div class="flow-container multiple-item u-fade-type-up">
+                        <div class="flow-content">
+                            <img src="images/flow/flow1.png" alt="カウンセリング">
+                            <div class="flow-ribbon">
+                                <img src="images/flow/flow-ribbon.png" alt="">
+                                <div class="ribbon-number">
+                                    <h4>Step<span>1</span></h4>
+                                    <h4>カウンセリング</h4>
+                                </div>
+                            </div>
+                            <p>
+                                専任のセラピストが、お客様の悩みや希望を丁寧にヒアリング。最適な施術プランを提案します。
+                            </p>
+                        </div>
+                        <div class="flow-content">
+                            <img src="images/flow/flow2.png" alt="施術">
+                            <div class="flow-ribbon">
+                                <img src="images/flow/flow-ribbon.png" alt="">
+                                <div class="ribbon-number">
+                                    <h4>Step<span>2</span></h4>
+                                    <h4>施術</h4>
+                                </div>
+                            </div>
+                            <p>
+                                選択されたメニューに基づき、リラックスできる環境で施術を実施。お客様の状態に合わせたケアを提供します。
+                            </p>
+                        </div>
+                        <div class="flow-content">
+                            <img src="images/flow/flow3.png" alt="アフターケア">
+                            <div class="flow-ribbon">
+                                <img src="images/flow/flow-ribbon.png" alt="">
+                                <div class="ribbon-number">
+                                    <h4>Step<span>3</span></h4>
+                                    <h4>アフターケア</h4>
+                                </div>
+                            </div>
+                            <p>
+                                施術後に、肌や体の状態を確認し、必要なアフターケアのアドバイスを行います。ご自宅でのケア方法もご案内します。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-one">
+            <div class="wrapper">
+                <div class="inner multiple-list js-scroll-trigger">
+                    <div class="cta-container multiple-item u-fade-type-up">
+                        <div class="cta-content">
+                            <div class="cta-title">
+                                <h2>Eleganceで体感する</h2>
+                                <h2>極上のリラクゼーション</h2>
+                            </div>
+                            <div class="cta-text">
+                                <p>
+                                    キャンペーン価格で、<br>
+                                    今すぐ贅沢なひとときをお試しください。
+                                </p>
+                                <p>
+                                    今なら特別価格でご予約いただけます。
+                                </p>
+                            </div>
+                            <div class="cta-group">
+                                <p>
+                                    すべてのメニュー<br>
+                                    <span>20</span>%オフ！
+                                </p>
+                                <div class="cta-btn">
+                                    <p>＼キャンペーンは3月31日まで／</p>
+                                    <a href="#">キャンペーン価格で予約する</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 利用者のレビュー -->
+        <section class="review" id="review">
+            <div class="wrapper">
+                <div class="inner multiple-list js-scroll-trigger">
+                    <div class="heading multiple-item u-fade-type-up">
+                        <h2>REVIEW</h2>
+                        <h3>利用者のレビュー</h3>
+                    </div>
+                    <div class="review-container multiple-item u-fade-type-up">
+                        <div class="review-group">
+                            <div class="review-content">
+                                <img src="images/review/review1.png" alt="レビュー女性">
+                                <h4>Review 1</h4>
+                                <p>
+                                    肌の調子が驚くほど良くなりました。<br>
+                                    フェイシャルケアは本当に効果的で、肌が蘇ったようです。
+                                </p>
+                            </div>
+                            <div class="review-content review-right">
+                                <img src="images/review/review2.png" alt="レビュー女性">
+                                <h4>Review 2</h4>
+                                <p>
+                                    完全個室のプライベート空間なので、<br>
+                                    他のお客様を気にせずリラックスできました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="review-group review-top-space">
+                            <div class="review-content">
+                                <img src="images/review/review3.png" alt="レビュー女性">
+                                <h4>Review 3</h4>
+                                <p>
+                                    キャンペーン価格でこれだけのクオリティの施術を受けられるのはお得です。リピート決定です。
+                                </p>
+                            </div>
+                            <div class="review-content review-right">
+                                <img src="images/review/review4.png" alt="レビュー女性">
+                                <h4>Review 4</h4>
+                                <p>
+                                    セラピストの方がとても丁寧で、安心してお任せできました。<br>
+                                    施術後のアドバイスも的確で助かりました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="review-group review-top-space">
+                            <div class="review-content">
+                                <img src="images/review/review5.png" alt="レビュー女性">
+                                <h4>Review 5</h4>
+                                <p>
+                                    サロンの雰囲気がとても素敵で、特別な時間を過ごすことができました。ストレスが吹き飛びました。
+                                </p>
+                            </div>
+                            <div class="review-content review-right">
+                                <img src="images/review/review6.png" alt="レビュー女性">
+                                <h4>Review 6</h4>
+                                <p>
+                                    ボディケアを受けましたが、体の疲れがすっかり取れて、<br>
+                                    また訪れたいと思います。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq" id="faq">
+            <div class="wrapper">
+                <div class="inner multiple-list js-scroll-trigger">
+                    <div class="heading multiple-item u-fade-type-up">
+                        <h2>FAQ</h2>
+                        <h3>よくある質問</h3>
+                    </div>
+                    <div class="faq-container multiple-item u-fade-type-up">
+                        <div class="faq-content">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">
+                                    予約はどうすればいいですか？
+                                </p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    オンライン予約フォームまたはお電話でご予約いただけます。予約確認のメールが届きますのでご確認ください。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-content">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">
+                                    キャンペーン価格はどうやって適用されますか？
+                                </p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    予約時にクーポンコードを入力いただくか、電話予約の際に「キャンペーン利用」とお伝えください。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-content">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">
+                                    クレジットカードは使えますか？
+                                </p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    はい、VISA、MasterCard、JCBなど主要なクレジットカードをご利用いただけます。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-content">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">
+                                    施術後にどんなケアが必要ですか？
+                                </p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    施術後はお肌や体の状態に応じたアフターケアを推奨しています。<br>
+                                    具体的なケア方法はセラピストからご案内いたします。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-content">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">
+                                    男性も利用できますか？
+                                </p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    はい、男性のお客様も大歓迎です。男性専用の施術メニューもご用意しています。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-content">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">
+                                    友達と一緒に利用できますか？
+                                </p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    はい、ペアでのご利用も可能です。<br>
+                                    お二人同時に施術を受けられるプランもご用意していますので、ご予約時にご相談ください。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-content">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">
+                                    駐車場はありますか？
+                                </p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    はい、サロン専用の駐車場をご利用いただけます。駐車場の詳細はご予約時にお伝えします。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-content">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">
+                                    キャンセルは可能ですか？
+                                </p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    ご予約の24時間前までにご連絡いただければキャンセル可能です。<br>
+                                    24時間以内のキャンセルはキャンセル料が発生する場合があります。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-content">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">
+                                    施術時間はどれくらいですか？
+                                </p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    メニューによりますが、通常60分から120分程度です。<br>
+                                    トータルケアの場合は120分以上かかることがあります。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-content">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">
+                                    子供連れでも利用できますか？
+                                </p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    申し訳ございませんが、サロン内はお子様の同伴はご遠慮いただいております。<br>
+                                    お子様のケアが必要な場合は、事前にご相談ください。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-two">
+            <div class="wrapper">
+                <div class="inner bottom-space multiple-list js-scroll-trigger">
+                    <div class="cta-container multiple-item u-fade-type-up">
+                        <div class="cta-space"></div>
+                        <div class="cta-content">
+                            <div class="cta-title">
+                                <h2>Eleganceで体感する</h2>
+                                <h2>極上のリラクゼーション</h2>
+                            </div>
+                            <div class="cta-text">
+                                <p>
+                                    キャンペーン価格で、<br>
+                                    今すぐ贅沢なひとときをお試しください。
+                                </p>
+                                <p>
+                                    今なら特別価格でご予約いただけます。
+                                </p>
+                            </div>
+                            <div class="cta-group">
+                                <p>
+                                    すべてのメニュー<br>
+                                    <span>20</span>%オフ！
+                                </p>
+                                <div class="cta-btn">
+                                    <p>＼キャンペーンは3月31日まで／</p>
+                                    <a href="#">キャンペーン価格で予約する</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="wrapper">
+                <div class="footer-container">
+                    <div class="footer-about">
+                        <h2>Elegance エステティックサロン</h2>
+                        <p>
+                            〒123-4567<br>
+                            東京都港区◯◯町1-2-3
+                        </p>
+                        <p>10:00〜21:00（年中無休）</p>
+                        <p>03-1234-5678</p>
+                        <p class="bottom-space">contact@elegance-salon.jp</p>
+                    </div>
+                    <div class="footer-group">
+                        <div class="footer-nav">
+                            <div class="footer-nav-above">
+                                <a href="#features">特徴</a>
+                                <a href="#reason">選ばれる理由</a>
+                                <a href="#commitment">こだわり</a>
+                                <a href="#menu">メニュー</a>
+                            </div>
+                            <div class="footer-nav-under">
+                                <a href="#features">施術の流れ</a>
+                                <a href="#reason">利用者のレビュー</a>
+                                <a href="#commitment">よくある質問</a>
+                            </div>
+                        </div>
+                        <div class="footer-sns">
+                            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                                <img src="images/sns-icon/instagram-icon.png" alt="インスタグラム">
+                            </a>
+                            <a href="https://www.facebook.com/?locale=ja_JP" target="_blank" rel="noreferrer">
+                                <img src="images/sns-icon/facebook-icon.png" alt="フェイスブック">
+                            </a>
+                            <a href="https://x.com/" target="_blank" rel="noreferrer">
+                                <img src="images/sns-icon/x-icon.png" alt="エックス">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p class="copyright">©︎ 2025 Elegance All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="js/main.js"></script>
+</body>
+</html>
